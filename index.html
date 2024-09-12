@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minha Empresa - Prestação de Serviços</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 1em 0;
+            text-align: center;
+        }
+        nav {
+            margin: 0;
+            padding: 0;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            padding: 0.5em 1em;
+        }
+        section {
+            padding: 2em;
+            margin: 0 auto;
+            max-width: 800px;
+        }
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1em 0;
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+        }
+        .services, .contact {
+            background-color: #fff;
+            padding: 1em;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-bottom: 2em;
+        }
+        .services ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        .services li {
+            padding: 0.5em 0;
+        }
+        .contact form input, .contact form textarea {
+            width: 100%;
+            padding: 0.5em;
+            margin: 0.5em 0;
+        }
+        .contact form input[type="submit"] {
+            background-color: #333;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Mamãe de Aluguel</h1>
+        <nav>
+            <a href="#services">Serviços</a>
+            <a href="#about">Sobre Nós</a>
+            <a href="#contact">Contato</a>
+        </nav>
+    </header>
+
+    <section id="services">
+        <h2>Serviços</h2>
+        <div class="services">
+            <h3>Nossos Serviços</h3>
+            <ul>
+                <li>Faxina simples</li>
+                <li>Faxina completa</li>
+                <li>Organização de guarda roupas</li>
+                <li>Cozinheira</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="about">
+        <h2>Sobre Nós</h2>
+        <div class="about">
+            <p>Se você é uma pessoa que mora sozinha e precisa de auxílio com os afazeres de casa somos a empresa certa para você. Oferecemos os serviços de faxina, cozinha e organização para que o seu dia a dia seja mais produtivo sem se preocupar com os afazeres de casa.</p>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contato</h2>
+        <div class="contact">
+            <form action="felipe.mgiusti@hotmail.com" method="post" enctype="text/plain">
+                <label for="name">Nome:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="message">Mensagem:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+                
+                <input type="submit" value="Enviar">
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Mamãe de Aluguel. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
