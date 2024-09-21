@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mamãe de Aluguel - Prestação de Serviços</title>
-    <!-- Link para Google Fonts -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
     <style>
         body {
@@ -28,14 +27,14 @@
             box-shadow: 0 2px 4px rgba(0,0,0,0.1);
         }
         h1 {
-            font-size: 4em; /* Aumenta o tamanho da fonte do título */
-            margin: 0; /* Remove margens padrão */
+            font-size: 4em;
+            margin: 0;
         }
         .nav-container {
-            background-color: rgba(255, 255, 255, 0.9); /* Cor de fundo da caixa */
-            padding: 10px 0; /* Espaço interno */
-            box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Sombra */
-            margin-top: 10px; /* Espaço acima da caixa */
+            background-color: rgba(255, 255, 255, 0.9);
+            padding: 10px 0;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            margin-top: 10px;
         }
         nav {
             display: flex;
@@ -48,7 +47,7 @@
             text-decoration: none;
             padding: 0.5em 1em;
             font-size: 1.1em;
-            margin: 0 20px; /* Adiciona espaço entre os links */
+            margin: 0 20px;
             transition: background-color 0.3s ease;
         }
         nav a:hover {
@@ -57,7 +56,7 @@
         section {
             padding: 2em;
             margin: 0 auto;
-            max-width: 800px; /* Define uma largura máxima comum */
+            max-width: 800px;
         }
         footer {
             background-color: rgba(0, 86, 179, 0.8);
@@ -70,22 +69,22 @@
             box-shadow: 0 -2px 4px rgba(0,0,0,0.1);
         }
         .services, .about {
-            padding: 2em; /* Ajusta o padding para ambas as seções */
+            padding: 2em;
             border-radius: 8px;
             box-shadow: 0 4px 8px rgba(0,0,0,0.1);
             margin-bottom: 2em;
-            background-color: rgba(255, 255, 255, 0.9); /* Cor de fundo igual */
-            max-width: 800px; /* Largura máxima igual para ambas */
-            margin: 0 auto; /* Centraliza a seção */
+            background-color: rgba(255, 255, 255, 0.9);
+            max-width: 800px;
+            margin: 0 auto;
         }
         .contact {
-            padding: 2em; /* Padding da seção de contato */
+            padding: 2em;
             border-radius: 8px;
             box-shadow: 0 4px 8px rgba(0,0,0,0.1);
             margin-bottom: 2em;
-            background-color: #ffffff; /* Muda a cor de fundo para branco */
-            max-width: 800px; /* Largura máxima igual */
-            margin: 0 auto; /* Centraliza a seção */
+            background-color: #ffffff;
+            max-width: 800px;
+            margin: 0 auto;
         }
         .services ul {
             list-style: none;
@@ -119,9 +118,8 @@
         .contact form input[type="submit"]:hover {
             background-color: #003d7a;
         }
-        /* Novas regras para mudar a cor dos títulos */
         h2 {
-            color: #500439; /* Cor desejada para os títulos "Serviços", "Sobre Nós" e "Contato" */
+            color: #500439;
         }
     </style>
 </head>
@@ -132,11 +130,18 @@
 
     <div class="nav-container">
         <nav>
-            <a href="#services">Serviços</a>
             <a href="#about">Sobre Nós</a>
+            <a href="#services">Serviços</a>
             <a href="#contact">Contato</a>
         </nav>
     </div>
+
+    <section id="about">
+        <h2>Sobre Nós</h2>
+        <div class="about">
+            <p>Se você é uma pessoa que mora sozinha e precisa de auxílio com os afazeres de casa, somos a empresa certa para você. Oferecemos os serviços de faxina, cozinha e organização para que o seu dia a dia seja mais produtivo sem se preocupar com os afazeres domésticos. Veja abaixo os nossos serviços.</p>
+        </div>
+    </section>
 
     <section id="services">
         <h2>Serviços</h2>
@@ -149,13 +154,6 @@
                 <li>Organização de guarda roupas</li>
                 <li>Cozinheira</li>
             </ul>
-        </div>
-    </section>
-
-    <section id="about">
-        <h2>Sobre Nós</h2>
-        <div class="about">
-            <p>Se você é uma pessoa que mora sozinha e precisa de auxílio com os afazeres de casa, somos a empresa certa para você. Oferecemos os serviços de faxina, cozinha e organização para que o seu dia a dia seja mais produtivo sem se preocupar com os afazeres de casa.</p>
         </div>
     </section>
 
