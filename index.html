@@ -68,21 +68,12 @@
             margin-top: auto;
             box-shadow: 0 -2px 4px rgba(0,0,0,0.1);
         }
-        .services, .about {
+        .services {
             padding: 2em;
             border-radius: 8px;
             box-shadow: 0 4px 8px rgba(0,0,0,0.1);
             margin-bottom: 2em;
             background-color: rgba(255, 255, 255, 0.9);
-            max-width: 800px;
-            margin: 0 auto;
-        }
-        .contact {
-            padding: 2em;
-            border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-            margin-bottom: 2em;
-            background-color: #ffffff;
             max-width: 800px;
             margin: 0 auto;
         }
@@ -96,6 +87,20 @@
         }
         .services li:last-child {
             border-bottom: none;
+        }
+        .subtext {
+            font-size: 0.9em; /* Tamanho da fonte do subtexto */
+            color: rgba(80, 4, 57, 0.7); /* Cor do subtexto */
+            margin-top: 0.2em; /* Espaço acima do subtexto */
+        }
+        .contact {
+            padding: 2em;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            margin-bottom: 2em;
+            background-color: #ffffff;
+            max-width: 800px;
+            margin: 0 auto;
         }
         .contact form input, .contact form textarea {
             width: calc(100% - 1em);
@@ -148,12 +153,14 @@
         <div class="services">
             <h3>Nossos Serviços</h3>
             <ul>
-                <li>Faxina simples</li>
-                <li>Faxina completa</li>
-                <li>Lava e passa roupas</li>
-                <li>Organização de guarda roupas</li>
-                <li><a href="cozinheira.html">Cozinheira</a></li>
-
+                <li>
+                    <a href="cozinheira.html">Cozinheira</a>
+                    <p class="subtext">Acesse para ver nosso cardápio</p>
+                </li>
+                <li><a href="#">Faxina simples</a></li>
+                <li><a href="#">Faxina completa</a></li>
+                <li><a href="#">Lava e passa roupas</a></li>
+                <li><a href="#">Organização de guarda roupas</a></li>
             </ul>
         </div>
     </section>
@@ -161,22 +168,23 @@
     <section id="contact">
         <h2>Contato</h2>
         <div class="contact">
-            <form action="https://formsubmit.co/felipe.mgiusti@hotmail.com" method="post">
-                <label for="name">Nome:</label>
-                <input type="text" id="name" name="name" required>
-                
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
-                
-                <label for="message">Mensagem:</label>
-                <textarea id="message" name="message" rows="4" required></textarea>
-                
-                <input type="submit" value="Enviar">
-            </form>
+            Ou entre em contato pelo <a href="https://wa.me/5511953654681" target="_blank">
+                <img src="https://raw.githubusercontent.com/felipemgiusti/mamaedealuguel/main/whatsapp.jpg" alt="WhatsApp" style="width: 48px; height: 48px;"></a>.
+           
             <p>
-                Ou entre em contato pelo <a href="https://wa.me/5511988905429" target="_blank">
-                    <img src="https://raw.githubusercontent.com/felipemgiusti/mamaedealuguel/main/whatsapp-33.jpg" alt="WhatsApp" style="width: 48px; height: 48px;"></a>.
-            </p>    
+                <form action="https://formsubmit.co/felipe.mgiusti@hotmail.com" method="post">
+                    <label for="name">Nome:</label>
+                    <input type="text" id="name" name="name" required>
+                    
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                    
+                    <label for="message">Mensagem:</label>
+                    <textarea id="message" name="message" rows="4" required></textarea>
+                    
+                    <input type="submit" value="Enviar">
+                </form>
+            </p>
         </div>
     </section>
 
